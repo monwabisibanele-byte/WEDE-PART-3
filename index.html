@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soweto Fresh Bakery | Freshly Baked in Soweto</title>
+  <meta name="description" content="Discover freshly baked bread, cakes, pastries and treats at Soweto Fresh Bakery. Browse our menu and send an enquiry.">
+  <meta name="keywords" content="Soweto bakery, fresh bread, cakes, pastries, bakery in Soweto">
+  <meta name="author" content="Soweto Fresh Bakery">
+  <meta property="og:title" content="Soweto Fresh Bakery">
+  <meta property="og:description" content="Freshly baked favourites made with care in Soweto.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="brand"><a href="index.html" aria-label="Soweto Fresh Bakery home"><span class="brand-mark">SF</span><span><strong>Soweto Fresh</strong><small>BAKERY & TREATS</small></span></a></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#menu">Our menu</a><a href="#gallery">Gallery</a><a href="#about">Our story</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">MADE FRESH EVERY DAY</p>
+        <h1>A little sweetness.<br><em>A lot of heart.</em></h1>
+        <p>From warm loaves to celebration cakes, we make everyday moments taste a little better.</p>
+        <a class="button" href="#menu">Explore our menu</a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Fresh bakery bread and pastries"></div>
+    </section>
+
+    <section class="intro section-wrap" id="about">
+      <div><p class="eyebrow">A LOCAL FAVOURITE</p><h2>Baked with care,<br>shared with love.</h2></div>
+      <p>We’re a neighbourhood bakery inspired by the simple joy of good food. Whether you’re picking up breakfast, treating the family or ordering a cake for a special day, there’s always something fresh waiting for you.</p>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">FROM OUR OVEN</p><h2>Bakery favourites</h2></div><p>Something for every craving.</p></div>
+      <div class="menu-tools"><input id="searchInput" type="search" placeholder="Search bread, cakes, muffins…" aria-label="Search bakery items"><div class="filters" role="group" aria-label="Filter menu"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="bread">Bread</button><button class="filter" data-filter="cakes">Cakes</button><button class="filter" data-filter="pastries">Pastries</button></div></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="bread" data-name="sourdough loaf"><img src="https://images.unsplash.com/photo-1585478259715-876acc5be8eb?auto=format&fit=crop&w=700&q=80" alt="Fresh artisan bread loaf"><div><span class="tag">BREAD</span><h3>Classic Sourdough</h3><p>A crisp crust with a soft, flavourful centre.</p><strong>From R35</strong></div></article>
+        <article class="product-card" data-category="cakes" data-name="chocolate cake"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80" alt="Chocolate celebration cake"><div><span class="tag">CAKES</span><h3>Chocolate Celebration Cake</h3><p>Rich chocolate layers for special occasions.</p><strong>From R250</strong></div></article>
+        <article class="product-card" data-category="pastries" data-name="croissant"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Golden flaky croissants"><div><span class="tag">PASTRIES</span><h3>Butter Croissants</h3><p>Golden, flaky and best enjoyed fresh.</p><strong>R18 each</strong></div></article>
+        <article class="product-card" data-category="cakes" data-name="vanilla cupcakes"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=700&q=80" alt="Vanilla cupcakes with icing"><div><span class="tag">CAKES</span><h3>Vanilla Cupcakes</h3><p>Light cupcakes topped with sweet buttercream.</p><strong>From R15</strong></div></article>
+        <article class="product-card" data-category="bread" data-name="brown bread"><img src="https://images.unsplash.com/photo-1598373182133-52452f7691ef?auto=format&fit=crop&w=700&q=80" alt="Fresh brown bread"><div><span class="tag">BREAD</span><h3>Everyday Brown Loaf</h3><p>A family staple, baked fresh for your table.</p><strong>R20</strong></div></article>
+        <article class="product-card" data-category="pastries" data-name="cinnamon rolls"><img src="https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=700&q=80" alt="Cinnamon rolls with glaze"><div><span class="tag">PASTRIES</span><h3>Cinnamon Rolls</h3><p>Soft rolls with cinnamon and a light glaze.</p><strong>R22 each</strong></div></article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No items match your search. Try another name or category.</p>
+    </section>
+
+    <section class="gallery-section section-wrap" id="gallery">
+      <div class="section-heading"><div><p class="eyebrow">A LOOK INSIDE</p><h2>Fresh from the bakery</h2></div><p>Good things are made here.</p></div>
+      <div class="gallery-grid">
+        <button class="gallery-item" data-full="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85" aria-label="View bread gallery image"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Freshly baked bread on a table"></button>
+        <button class="gallery-item" data-full="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=85" aria-label="View pastry gallery image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Fresh pastries"></button>
+        <button class="gallery-item" data-full="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=85" aria-label="View cake gallery image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Decorated cake"></button>
+      </div>
+    </section>
+
+    <section class="visit-section section-wrap">
+      <div><p class="eyebrow">COME SAY HELLO</p><h2>Your neighbourhood bakery</h2><p>Find us in Soweto. Check the map below before visiting, or send us a message about an order.</p><p><strong>Hours:</strong> Monday–Saturday, 7:00–17:00<br>Sunday, 8:00–13:00</p></div>
+      <div class="map-wrap"><iframe title="Map showing Soweto, Johannesburg" src="https://www.google.com/maps?q=Soweto%2C%20Johannesburg&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-copy"><p class="eyebrow">LET’S TALK CAKE</p><h2>Have an order in mind?</h2><p>Tell us what you’re looking for and we’ll get back to you. Please allow time for custom cake orders.</p><p><strong>Email:</strong> hello@sowetofreshbakery.example<br><strong>Phone:</strong> 011 000 0000</p></div>
+      <form id="contactForm" novalidate>
+        <label for="name">Your name</label><input id="name" name="name" required minlength="2" autocomplete="name">
+        <label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email">
+        <label for="orderType">What are you enquiring about?</label><select id="orderType" name="orderType" required><option value="">Choose one</option><option>General enquiry</option><option>Custom cake</option><option>Bulk order</option><option>Other bakery items</option></select>
+        <label for="message">Message</label><textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+        <button class="button" type="submit">Send enquiry</button><p id="formMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="brand"><span class="brand-mark">SF</span><span><strong>Soweto Fresh</strong><small>BAKERY & TREATS</small></span></div><p>Freshly baked, locally loved.</p><small>© <span id="year"></span> Soweto Fresh Bakery. Student project website.</small></footer>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image" hidden><button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" alt="Expanded bakery gallery image"></div>
+</body>
+</html>
